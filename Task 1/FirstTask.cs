@@ -5,6 +5,9 @@ namespace Library
 {
     public class ZadanieOne
     {
+        /// <summary>
+        /// Outputs a comma-separated list of integers from 1 to n on the console.
+        /// </summary>
         public static void One() /*need to add the static keyword so that the method
          can be called without creating a class object*/
         {
@@ -22,6 +25,10 @@ namespace Library
     }
     public class ZadanieTwo
     {
+        /// <summary>
+        /// Outputs a square with the sides of length n on the console,
+        /// consisting of the "#" symbol, except for the center, which is empty.
+        /// </summary>
         public static void Two()
         {
             Console.Write("Введите нечетное число N: ");
