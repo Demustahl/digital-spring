@@ -20,14 +20,24 @@ namespace Library
             {
                 Console.WriteLine("Вы ввели четное N.");
                 return;
-            }            
-            for (int row = 1; row <= n; row++) {
-                for (int col = 1; col <= n; col++) {
+            }
+            for (int row = 1; row <= n; row++)
+            {
+                for (int col = 1; col <= n; col++)
+                {
                     if (row == n / 2 + 1 && col == n / 2 + 1) Console.Write(" ");
-                    else Console.Write("#");                    
+                    else Console.Write("#");
                 }
                 Console.WriteLine();
             }
+        }
+    }
+    class program
+    {
+        static void Main()
+        {
+            ZadanieOne.One();
+            ZadanieTwo.Two();
         }
     }
 }
