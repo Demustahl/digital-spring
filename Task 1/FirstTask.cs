@@ -1,3 +1,6 @@
+using System;
+using System.Linq;
+
 namespace Library
 {
     public class ZadanieOne
@@ -6,7 +9,7 @@ namespace Library
         {
             Console.Write("Введите число N: ");
             int n = int.Parse(Console.ReadLine());
-            string result = string.Join(", ", Enumerable.Range(1, n));
+            string result = string.Join(", ", Enumerable.Range(1, n)) + ".";
             Console.WriteLine(result);
         }
     }
@@ -25,8 +28,8 @@ namespace Library
             {
                 for (int col = 1; col <= n; col++)
                 {
-                    if (row == n / 2 + 1 && col == n / 2 + 1) Console.Write(" ");
-                    else Console.Write("#");
+                    if (row == n / 2 + 1 && col == n / 2 + 1) Console.Write("  ");
+                    else Console.Write("# ");
                 }
                 Console.WriteLine();
             }
@@ -36,7 +39,8 @@ namespace Library
     {
         static void Main()
         {
-            ZadanieOne.One();
+            ZadanieOne zadanie1 = new ZadanieOne();
+            zadanie1.One();
             ZadanieTwo.Two();
         }
     }
